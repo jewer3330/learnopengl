@@ -13,35 +13,82 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\assets">
+      <UniqueIdentifier>{2996e50f-f701-45c6-989b-a854facb0e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{8cc247e9-0a28-4700-8ceb-3b284151a8ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClInclude Include="src\camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\..\glad\src\glad.c">
-      <Filter>源文件</Filter>
+      <Filter>glad</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mesh.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="shader.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="camera.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="model.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <None Include="assets\3.3.shader.fs">
+      <Filter>资源文件\assets</Filter>
+    </None>
+    <None Include="assets\3.3.shader.vs">
+      <Filter>资源文件\assets</Filter>
+    </None>
+    <None Include="assets\hero_female_001.FBX">
+      <Filter>资源文件\assets</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="3.3.shader.vs">
-      <Filter>资源文件</Filter>
-    </None>
-    <None Include="3.3.shader.fs">
-      <Filter>资源文件</Filter>
-    </None>
+    <Image Include="assets\all_Female_adult_Eyebrow_AlbedoTransparency 1.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Body_D.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Body_M.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Body_N.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Eyeball_D.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Eyeball_M.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Eyeball_N.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Eyelash_D.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Head_D.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Head_M.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
+    <Image Include="assets\Hero_Female_Head_N.tga">
+      <Filter>资源文件\assets</Filter>
+    </Image>
   </ItemGroup>
 </Project>

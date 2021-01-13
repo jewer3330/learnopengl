@@ -18,6 +18,35 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\camera.h" />
+    <ClInclude Include="src\mesh.h" />
+    <ClInclude Include="src\model.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\glad\src\glad.c" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\3.3.shader.fs" />
+    <None Include="assets\3.3.shader.vs" />
+    <None Include="assets\hero_female_001.FBX" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\all_Female_adult_Eyebrow_AlbedoTransparency 1.tga" />
+    <Image Include="assets\Hero_Female_Body_D.tga" />
+    <Image Include="assets\Hero_Female_Body_M.tga" />
+    <Image Include="assets\Hero_Female_Body_N.tga" />
+    <Image Include="assets\Hero_Female_Eyeball_D.tga" />
+    <Image Include="assets\Hero_Female_Eyeball_M.tga" />
+    <Image Include="assets\Hero_Female_Eyeball_N.tga" />
+    <Image Include="assets\Hero_Female_Eyelash_D.tga" />
+    <Image Include="assets\Hero_Female_Head_D.tga" />
+    <Image Include="assets\Hero_Female_Head_M.tga" />
+    <Image Include="assets\Hero_Female_Head_N.tga" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -82,9 +111,10 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\learnopengl\stb-master;F:\learnopengl\assimp-5.0.1\include;F:\learnopengl\glm-0.9.9.8\glm;F:\learnopengl\glad\include;F:\learnopengl\glfw-3.3.2.bin.WIN64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\learnopengl\glfw-3.3.2.bin.WIN64\lib-vc2019;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\learnopengl\include;F:\learnopengl\stb-master;F:\learnopengl\assimp-5.0.1\include;F:\learnopengl\glm-0.9.9.8\glm;F:\learnopengl\glad\include;F:\learnopengl\glfw-3.3.2.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\learnopengl\bin;F:\learnopengl\glfw-3.3.2.bin.WIN64\lib-vc2019;$(LibraryPath)</LibraryPath>
     <SourcePath>$(SourcePath)</SourcePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -128,7 +158,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -148,20 +178,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\glad\src\glad.c" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="mesh.h" />
-    <ClInclude Include="model.h" />
-    <ClInclude Include="shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="3.3.shader.fs" />
-    <None Include="3.3.shader.vs" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
