@@ -19,6 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\imgui-1.79\examples\imgui_impl_glfw.h" />
+    <ClInclude Include="..\..\imgui-1.79\examples\imgui_impl_opengl3.h" />
     <ClInclude Include="src\camera.h" />
     <ClInclude Include="src\mesh.h" />
     <ClInclude Include="src\model.h" />
@@ -27,6 +29,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\glad\src\glad.c" />
+    <ClCompile Include="..\..\imgui-1.79\examples\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\imgui-1.79\examples\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\imgui-1.79\imgui.cpp" />
+    <ClCompile Include="..\..\imgui-1.79\imgui_demo.cpp" />
+    <ClCompile Include="..\..\imgui-1.79\imgui_draw.cpp" />
+    <ClCompile Include="..\..\imgui-1.79\imgui_widgets.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -35,17 +43,16 @@
     <None Include="assets\hero_female_001.FBX" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\all_Female_adult_Eyebrow_AlbedoTransparency 1.tga" />
-    <Image Include="assets\Hero_Female_Body_D.tga" />
-    <Image Include="assets\Hero_Female_Body_M.tga" />
-    <Image Include="assets\Hero_Female_Body_N.tga" />
-    <Image Include="assets\Hero_Female_Eyeball_D.tga" />
-    <Image Include="assets\Hero_Female_Eyeball_M.tga" />
-    <Image Include="assets\Hero_Female_Eyeball_N.tga" />
-    <Image Include="assets\Hero_Female_Eyelash_D.tga" />
-    <Image Include="assets\Hero_Female_Head_D.tga" />
-    <Image Include="assets\Hero_Female_Head_M.tga" />
-    <Image Include="assets\Hero_Female_Head_N.tga" />
+    <Image Include="assets\Female_Body_D.tga" />
+    <Image Include="assets\Female_Body_M.tga" />
+    <Image Include="assets\Female_Body_N.tga" />
+    <Image Include="assets\Female_Eyeball_M.tga" />
+    <Image Include="assets\Female_Eyeball_N.tga" />
+    <Image Include="assets\Female_Eyelash_D.tga" />
+    <Image Include="assets\Female_eyes_D.tga" />
+    <Image Include="assets\Female_Head_D.tga" />
+    <Image Include="assets\Female_Head_M.tga" />
+    <Image Include="assets\Female_Head_N.tga" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -111,7 +118,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\learnopengl\include;F:\learnopengl\stb-master;F:\learnopengl\assimp-5.0.1\include;F:\learnopengl\glm-0.9.9.8\glm;F:\learnopengl\glad\include;F:\learnopengl\glfw-3.3.2.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <IncludePath>F:\learnopengl\imgui-1.79;F:\learnopengl\include;F:\learnopengl\stb-master;F:\learnopengl\assimp-5.0.1\include;F:\learnopengl\glm;F:\learnopengl\glad\include;F:\learnopengl\glfw-3.3.2.bin.WIN64\include;$(IncludePath)</IncludePath>
     <LibraryPath>F:\learnopengl\bin;F:\learnopengl\glfw-3.3.2.bin.WIN64\lib-vc2019;$(LibraryPath)</LibraryPath>
     <SourcePath>$(SourcePath)</SourcePath>
     <ReferencePath>$(ReferencePath)</ReferencePath>
@@ -158,7 +165,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;assimp-vc142-mt.lib;glm_static.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>

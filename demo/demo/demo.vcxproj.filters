@@ -13,11 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="资源文件\assets">
-      <UniqueIdentifier>{2996e50f-f701-45c6-989b-a854facb0e90}</UniqueIdentifier>
-    </Filter>
     <Filter Include="glad">
       <UniqueIdentifier>{8cc247e9-0a28-4700-8ceb-3b284151a8ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{21f0910b-0f76-4493-86d6-6a6ad4e76a9e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +36,12 @@
     <ClInclude Include="src\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\imgui-1.79\examples\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui-1.79\examples\imgui_impl_opengl3.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -44,51 +50,66 @@
     <ClCompile Include="..\..\glad\src\glad.c">
       <Filter>glad</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\examples\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui-1.79\examples\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\3.3.shader.fs">
-      <Filter>资源文件\assets</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="assets\3.3.shader.vs">
-      <Filter>资源文件\assets</Filter>
+      <Filter>资源文件</Filter>
     </None>
     <None Include="assets\hero_female_001.FBX">
-      <Filter>资源文件\assets</Filter>
+      <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="assets\all_Female_adult_Eyebrow_AlbedoTransparency 1.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Body_D.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Body_D.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Body_M.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Body_M.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Body_N.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Body_N.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Eyeball_M.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Eyeball_D.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Eyeball_N.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Eyeball_M.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Eyelash_D.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Eyeball_N.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_eyes_D.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Eyelash_D.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Head_D.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Head_D.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Head_M.tga">
+      <Filter>资源文件</Filter>
     </Image>
-    <Image Include="assets\Hero_Female_Head_M.tga">
-      <Filter>资源文件\assets</Filter>
-    </Image>
-    <Image Include="assets\Hero_Female_Head_N.tga">
-      <Filter>资源文件\assets</Filter>
+    <Image Include="assets\Female_Head_N.tga">
+      <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
 </Project>
